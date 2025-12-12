@@ -96,4 +96,4 @@ def test_percentage2():
     assert a.percentage(1, -10) == "Invalid: percentage is negative!"
 
 def test_percentage3():
-    assert a.percentage("a, b") == "Invalid parameter passed! Not a number"
+    assert a.percentage("a", "b") == "Invalid parameter passed! Not a number"
