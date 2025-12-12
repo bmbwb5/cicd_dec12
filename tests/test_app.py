@@ -27,7 +27,7 @@ def test_sub3():
     assert a.sub("a", "b") == "Invalid parameter passed! Not a number"
 
 def test_mult():
-    asser a.mult(5, 6) == 30
+    assert a.mult(5, 6) == 30
 
 def test_mult2():
     assert a.mult(-5, 6) == -30
