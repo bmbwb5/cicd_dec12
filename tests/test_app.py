@@ -54,7 +54,7 @@ def test_log3():
     assert a.log("a") == "Invalid parameter passed! Not a number"
 
 def test_square():
-    assert a.square(1, 3) == 3
+    assert a.square(1, 3) == 1
 
 def test_square2():
     assert a.square(2) == 4
@@ -63,19 +63,19 @@ def test_square3():
     assert a.square("a") == "Invalid parameter passed! Not a number"
 
 def test_sin():
-    assert a.sin(0) == 0
+    assert math.isclose(a.sin(0), 0)
 
 def test_sin2():
-    assert a.sin(math.radians(90)) == 1
+    assert math.isclose(a.sin(math.radians(90)), 1)
 
 def test_sin3():
     assert a.sin("a") == "Invalid parameter passed! Not a number"
 
 def test_cos():
-    assert a.cos(0) == 1
+    assert math.isclose(a.cos(0), 1)
 
 def test_cos2():
-    assert a.cos(math.radians(90)) == 0
+    assert math.isclose(a.cos(math.radians(90)), 0)
 
 def test_cos3():
     assert a.cos("a") == "Invalid parameter passed! Not a number"
