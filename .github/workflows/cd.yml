@@ -50,5 +50,7 @@ jobs:
 
       - name: deploy github-pages
         uses: actions/deploy-pages@v4
+        with:
+          path: htmlcov
 
 
