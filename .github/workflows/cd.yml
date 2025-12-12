@@ -24,7 +24,7 @@ jobs:
         run: |
           pip install -r requirements.txt
 
-        - name: Prepare the webpage
+      - name: Prepare the webpage
         run: |
           mkdir sites
           mv htmlcov sites/
