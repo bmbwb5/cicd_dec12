@@ -75,7 +75,7 @@ def test_cos():
     assert math.isclose(a.cos(0), 1)
 
 def test_cos2():
-    assert math.isclose(a.cos(math.radians(90)), 0)
+    assert math.isclose(a.cos(math.radians(180)), -1)
 
 def test_cos3():
     assert a.cos("a") == "Invalid parameter passed! Not a number"
