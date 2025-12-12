@@ -47,7 +47,7 @@ jobs:
           path: ./sites
 
 
-      - name: deploy the artifacts
+      - name: deploy github-pages
         uses: actions/deploy-pages@v4
 
 
