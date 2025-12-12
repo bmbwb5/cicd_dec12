@@ -48,6 +48,7 @@ jobs:
 
 
       - name: deploy github-pages
+        environment: github-pages
         uses: actions/deploy-pages@v4
 
 
