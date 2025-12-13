@@ -15,7 +15,7 @@ def test_add2():
     assert a.add(5, 6) != 10
 
 def test_add3():
-    for i,o in ((("a", "b"), False), ((1, 2), True))
+    for i,o in ((("a", "b"), False), ((1, 2), True)):
         try:
             a.add(*i)
             ret = True
