@@ -89,7 +89,7 @@ def test_log2():
 def test_log3():
     for i,o in ((("a"), False), ((1), True)):
         try:
-            a.log(*i)
+            a.log(i)
             ret = True
         except ValueError:
             ret = False
@@ -104,7 +104,7 @@ def test_square2():
 def test_square3():
     for i,o in ((("a"), False), ((1), True)):
         try:
-            a.square(*i)
+            a.square(i)
             ret = True
         except ValueError:
             ret = False
@@ -119,7 +119,7 @@ def test_sin2():
 def test_sin3():
     for i,o in ((("a"), False), ((1), True)):
         try:
-            a.sin(*i)
+            a.sin(i)
             ret = True
         except ValueError:
             ret = False
@@ -134,7 +134,7 @@ def test_cos2():
 def test_cos3():
     for i,o in ((("a"), False), ((1), True)):
         try:
-            a.cos(*i)
+            a.cos(i)
             ret = True
         except ValueError:
             ret = False
@@ -146,7 +146,7 @@ def test_square_root():
 def test_square_root2():
     for i,o in (((-4), False), ((4), True)):
         try:
-            a.square_root(*i)
+            a.square_root(i)
             ret = True
         except ValueError:
             ret = False
@@ -155,7 +155,7 @@ def test_square_root2():
 def test_square_root3():
      for i,o in ((("a"), False), ((9), True)):
         try:
-            a.square_root(*i)
+            a.square_root(i)
             ret = True
         except ValueError:
             ret = False
