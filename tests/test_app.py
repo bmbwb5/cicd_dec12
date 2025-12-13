@@ -15,11 +15,13 @@ def test_add2():
     assert a.add(5, 6) != 10
 
 def test_add3():
-    try:
-        a.add("a", "b")
-        assert False
-    except ValueError:
-        assert True
+    for i,o in ((("a", "b"), False), ((1, 2), True))
+        try:
+            a.add(*i)
+            ret = True
+        except ValueError:
+            ret = False
+        assert ret == o
 
 def test_sub():
     assert a.sub(5, 6) == -1
