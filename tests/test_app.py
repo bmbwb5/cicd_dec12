@@ -80,7 +80,7 @@ def test_log():
 def test_log2():
     for i,o in (((0), False), ((1), True)):
         try:
-            a.log(*i)
+            a.log(i)
             ret = True
         except ValueError:
             ret = False
