@@ -20,7 +20,7 @@ def div (a, b):
         raise ValueError("Invalid parameter passed! Not a number")
     if b == 0:
         raise ZeroDivisionError
-    x = a/b
+    return a/b
 
 # Advanced Operations
 def log (a):
